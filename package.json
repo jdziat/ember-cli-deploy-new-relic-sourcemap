@@ -23,7 +23,7 @@
     "mocha": "^3.2.0"
   },
   "dependencies": {
-    "@newrelic/publish-sourcemap": "^4.1.2",
+    "@newrelic/publish-sourcemap": "^5.1.0",
     "core-object": "^3.1.0",
     "ember-cli-deploy-plugin": "^0.2.9",
     "rsvp": "^3.5.0",

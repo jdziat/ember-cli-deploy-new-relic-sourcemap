@@ -192,7 +192,7 @@ describe('NewRelicClient', function() {
             sourcemapPath: 'test-dir/test-a.map',
             javascriptUrl: DEFAULT_PREFIX + 'test-a.js',
             applicationId: DEFAULT_APP_ID,
-            nrAdminKey: DEFAULT_NR_KEY
+            apiKey: DEFAULT_NR_KEY
           });
 
           assert.deepEqual(result, {
