@@ -20,6 +20,8 @@ describe('new-relic-sourcemap plugin', function() {
   var DEFAULT_APP_ID = '1234';
   var DEFAULT_NR_KEY = '5678';
   var DEFAULT_MAP_PATTERN = '**/*.map';
+  var DEFAULT_RELEASE_NAME = 'testing';
+  var DEFAULT_RELEASE_ID = 'testing-1234';
 
   before(function() {
     subject = require('../../index'); // eslint-disable-line global-require
@@ -67,6 +69,8 @@ describe('new-relic-sourcemap plugin', function() {
           applicationId: DEFAULT_APP_ID,
           nrAdminKey: DEFAULT_NR_KEY,
           ignoreFingerprint: false,
+          releaseName: DEFAULT_RELEASE_NAME,
+          releaseId: DEFAULT_RELEASE_ID,
           filterRegex: /^-[a-zA-Z0-9]+$/
         }
       }
@@ -99,6 +103,8 @@ describe('new-relic-sourcemap plugin', function() {
               prefix: DEFAULT_PREFIX,
               nrAdminKey: DEFAULT_NR_KEY,
               ignoreFingerprint: false,
+              releaseName: DEFAULT_RELEASE_NAME,
+              releaseId: DEFAULT_RELEASE_ID,
               filterRegex: /^-[a-zA-Z0-9]+$/
             });
 

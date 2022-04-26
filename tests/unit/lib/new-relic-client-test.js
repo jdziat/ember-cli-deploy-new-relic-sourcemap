@@ -10,6 +10,8 @@ describe('NewRelicClient', function() {
   var DEFAULT_NR_KEY = '5678';
   var DEFAULT_MAP_PATTERN = '**/*.js.map';
   var FIXTURES_PATH = path.join(process.cwd(), 'tests/fixtures');
+  var DEFAULT_RELEASE_NAME = 'testing';
+  var DEFAULT_RELEASE_ID = 'testing-1234';
 
   before(function() {
     NewRelic = require('../../../lib/new-relic-client'); // eslint-disable-line global-require
@@ -44,6 +46,8 @@ describe('NewRelicClient', function() {
       _nrClient: nrClient,
       applicationId: DEFAULT_APP_ID,
       nrAdminKey: DEFAULT_NR_KEY,
+      releaseName: DEFAULT_RELEASE_NAME,
+      releaseId: DEFAULT_RELEASE_ID,
       prefix: DEFAULT_PREFIX
     });
   });
@@ -192,6 +196,8 @@ describe('NewRelicClient', function() {
             sourcemapPath: 'test-dir/test-a.map',
             javascriptUrl: DEFAULT_PREFIX + 'test-a.js',
             applicationId: DEFAULT_APP_ID,
+            releaseName: DEFAULT_RELEASE_NAME,
+            releaseId: DEFAULT_RELEASE_ID,
             apiKey: DEFAULT_NR_KEY
           });
 

@@ -30,6 +30,8 @@ module.exports = {
         var prefix            = this.readConfig('prefix');
         var ignoreFingerprint = this.readConfig('ignoreFingerprint');
         var filterRegex       = this.readConfig('filterRegex');
+        var releaseName       = this.readConfig('releaseName');
+        var releaseId       = this.readConfig('releaseId');
 
         this.log('Preparing to upload source maps to New Relic', { verbose: true });
 
@@ -39,7 +41,9 @@ module.exports = {
           nrAdminKey: nrAdminKey,
           prefix: prefix,
           ignoreFingerprint: ignoreFingerprint,
-          filterRegex: filterRegex
+          filterRegex: filterRegex,
+          releaseId: releaseId,
+          releaseName: releaseName
         });
 
         return nrClient.publishSourcemaps({

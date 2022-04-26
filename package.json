@@ -1,6 +1,6 @@
 {
   "name": "ember-cli-deploy-new-relic-sourcemap",
-  "version": "0.1.2",
+  "version": "0.2.0",
   "description": "A deploy plugin to upload sourcemaps to New Relic. ",
   "main": "index.js",
   "scripts": {
